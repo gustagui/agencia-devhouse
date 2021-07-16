@@ -1,0 +1,74 @@
+body {
+}
+
+header {  
+    color: rgb(32, 32, 139);
+    height: 80px;
+    border: blueviolet solid;    
+    font-size: 20px;
+}
+
+.container {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+a {    
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.button-contact {
+    background: #3751FF;
+    border-radius: 40px;
+    color: #fff;
+    padding: 10px;      
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.nav-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(32, 32, 139);
+}
+
+.button-buy {
+    background: #3751FF;
+    border-radius: 40px;
+    color: #fff;
+    padding: 20px;      
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.button-see {
+    background: #fff;
+    border-radius: 40px;
+    color: rgb(32, 32, 139);
+    padding: 20px;      
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}

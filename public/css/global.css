@@ -3,21 +3,39 @@ body {
     font-size: 14px;
 }
 
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
 #titulo {
-    color:red;
+    color:#fff;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #destak {
-    align-items: center;
     width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#div-social{
-    text-align: middle;
+#div-social {
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    gap: 20px;
+    padding: 0;
 }
 
 .img-footer {
-    width: 40px;
+    width: 80px;
+    margin: 10px;
 }
