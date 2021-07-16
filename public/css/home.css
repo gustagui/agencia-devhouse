@@ -4,8 +4,10 @@ body {
 header {  
     color: rgb(32, 32, 139);
     height: 80px;
-    border: blueviolet solid;    
+    border-top: blueviolet solid;   
+    border-bottom: blueviolet solid; 
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 .container {    
@@ -14,7 +16,7 @@ header {
     align-items: center;
 }
 
-ul {
+.div-container {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -30,9 +32,10 @@ a {
 
 h1 {
     font-size: 50px;
+    text-align: center;
 }
 
-.button-contact {
+.button-padrao {
     background: #3751FF;
     border-radius: 40px;
     color: #fff;
@@ -51,24 +54,6 @@ h1 {
     color:rgb(32, 32, 139);
 }
 
-.button-buy {
-    background: #3751FF;
-    border-radius: 40px;
-    color: #fff;
-    padding: 20px;      
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-.button-see {
-    background: #fff;
-    border-radius: 40px;
-    color: rgb(32, 32, 139);
-    padding: 20px;      
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
+.nav-banner * {
+    margin-top: 10px;
 }
