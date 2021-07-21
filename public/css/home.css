@@ -190,6 +190,44 @@ p {
     background-color: grey;
 }
 
+footer {
+    display: flex;
+    margin: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h4 {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-footer {
+    width: 30px;
+}
+
+.last-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-footer {
+    display: flex;
+}
+
 #menu-mobile {
     display: none;
 }
@@ -206,6 +244,13 @@ p {
         display: none;
     }
 
+    .div-logo-footer1 {
+        margin-left: 0;
+    }
+
+    .div-logo-footer2 {
+        margin-left: 0;
+    }
 }
 
 @media(max-width: 465px){
