@@ -11,12 +11,14 @@ header {
     border-bottom: blueviolet solid; 
     font-size: 20px;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .container {    
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .div-container {
@@ -47,6 +49,10 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     border: none;
+}
+
+.button-padrao:hover {
+    background-color: #3752ffb7;
 }
 
 .nav-banner {
@@ -119,15 +125,107 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .div-user {
-    border: 1px solid black;
+    border: 1px solid grey;
+    border-radius: 4px;
     padding: 20px;
     margin: 10px;
-    width: 250px;
-    height: 300px;
+    width: 270px;
+    height: 400px;
     justify-content: center;
     align-items: center;
     font-size: 18px;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.div-user-avatar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 85px;
+}
+
+.footer-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #3751FF;
+    color: white;
+    margin: 0;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.div-button-fotter {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-white {    
+    background: #FFF;
+    border-radius: 40px;
+    color: #3751FF;
+    padding: 10px;      
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.img-button {
+    width: 20px;
+}
+
+.button-white:hover {
+    background-color: grey;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+
+
+@media(max-width: 800px){
+
+    .nav-banner img {
+        display: none;
+    }
+
+    .banner2 img {
+        display: none;
+    }
+
+}
+
+@media(max-width: 465px){
+
+    header {
+        border: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;      
+    }
+
+    .div-container {
+        display: none;     
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+}
+
