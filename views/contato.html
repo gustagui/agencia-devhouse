@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/contato.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title> Contato </title>
+</head>
+<body>
+    <header>
+        <section class="container">      
+            <img src="/img-home/logo.png" alt="Agencia - devHouse">      
+            <div class="div-container">                
+                <a href="Home"> Home </a>
+                <a href="Produtos"> Produtos </a>
+                <a href="Depoimentos"> Depoimentos </a>
+                <a href="Blog"> Blog </a>
+                <a href="Contato"> Contato </a>
+            </div>
+            <div class="div-container">                          
+                <a href=""> +00 123 456 789 </a>
+                <button class="button-padrao"> Contact Us </button>
+            </div>        
+            <div id="menu-mobile">
+                <button><img src="/img-home/menu-icon.png"  alt="menu-icon">
+                </button>
+            </div>
+        </section>        
+    </header>
+    <main>
+        <section>
+            <h1> Contato </h1>
+            <small> Questions or concerns? Just fill out the form below and our support team will<br> get back to you within 24 hours </small>
+        </section>
+        <form action="/receber-contato" method="POST">     
+                <div class="fullname">
+                    <input type="text" name="name" placeholder="First Name">
+                    <input type="text" name="lastname"  placeholder="Last Name">
+                </div>     
+                <input id="input-phone" type="Tel" name="telefone"  placeholder="Phone Number">
+                <select class="id-select" name="Select Service">
+                    <option selected disabled > Select Service </option>
+                    <option value="Site"> Site </option>
+                    <option value="Sistem"> Sistem </option>
+                    <option value="App"> App </option>
+                    <option value="Commerce">Commerce</option>
+                </select>
+                <div>
+                    <button class="button-form" type="submit">Enviar</button>
+                    <button class="button-form" type="reset">Limpar</button>
+                </div>                
+            </section>
+        </form>
+    </main>    
+    <section class="footer-1">
+        <h2> Ready to launch<br> your next website? </h2>
+        <div class="div-button-fotter">
+        <button class="button-white">
+            <img class="img-button" src="/img-home/img-button.png" alt=""> 
+            Get in touch now
+        </button>
+        <small class="small-footer"> Or, take a peek inside our design studio </small>
+        </div>
+    </section>
+    <footer>
+            <div>
+                <img class="logo-footer" src="/img-home/logo.png" alt="Agencia - devHouse">
+                <p>
+                    Digits is a website template built to<br> work seamlesly with the WordPress <br>block editor to create beautifully<br> designed pages in minutes.
+                </p>
+            </div>
+            <div class="div-footer">
+                <h4> Resources </h4>
+                <div class="div-link">
+                    <a href="">
+                        <img class="link-footer" src="/img/facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img class="link-footer" src="/img/instagram.svg" alt="">
+                    </a>
+                </div>
+                <a href="">Download now</a>
+                <a href="">Documentation</a>
+            </div>
+    </footer>
+    <div class="last-div">
+        <p>
+            Copyright © 2020 tempy.club
+        </p>
+        <p>
+            Privacy Policy         Terms of Use         GDPR
+        </p>
+    </div>
+</body>
+</html>
