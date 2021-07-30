@@ -39,3 +39,43 @@ header {
     width: 80px;
     margin: 10px;
 }
+
+/* 
+    media cell
+*/
+
+@media(max-width: 800px){
+
+    .nav-banner img {
+        display: none;
+    }
+
+    .banner2 img {
+        display: none;
+    }
+
+    .div-logo-footer1 {
+        margin-left: 0;
+    }
+
+    .div-logo-footer2 {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 465px){
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;      
+    }
+
+    .div-container {
+        display: none;     
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+}
