@@ -1,30 +1,4 @@
-body * {
-    color:rgb(32, 32, 139);
-    margin-top: 10px;
-}
 
-header {  
-    color: rgb(32, 32, 139);
-    height: 80px; 
-    font-size: 20px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-
-.button-padrao {
-    background: #3752ffb7;
-    border-radius: 40px;
-    color: #fff;
-    padding: 10px;      
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-.button-padrao:hover {
-    background-color: #3751FF;
-}
 
 .button-form {    
     background: #3752ffb7;
@@ -56,10 +30,6 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 40px;
-}
-
-a {    
-    text-decoration: none;
 }
 
 h1 {
@@ -101,98 +71,6 @@ input {
     height: 30px;
 }
 
-.footer-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px;
-    background-color: #3751FF;
-    color: white;
-    margin: 0;
-    flex-wrap: wrap;
-    margin-top: 100px;
-}
-
-.footer-1 h2 {
-    color: white;
-}
-
-
-.small-footer {
-    color:white;
-}
-
-.div-button-fotter {
-    display: flex;
-    flex-direction: column;
-}
-
-.button-white {    
-    background: #FFF;
-    border-radius: 40px;
-    color: #3751FF;
-    padding: 10px;      
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-.img-button {
-    width: 20px;
-}
-
-.button-white:hover {
-    background-color: #576cf8;
-    color: #fff;
-}
-
-footer {
-    display: flex;
-    margin: 100px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-h4 {
-    text-align: left;
-    margin-bottom: 0px;
-}
-
-h2 {
-    font-size: 48px;
-}
-
-.div-footer {
-    display: flex;
-    flex-direction: column;
-}
-
-.link-footer {
-    width: 30px;
-}
-
-.last-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.div-link {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.logo-footer {
-    display: flex;
-}
-
-p {
-    text-align: left;
-}
 
 .chat {
     position: fixed;
@@ -205,45 +83,4 @@ p {
     font-size: 20px;
     color: white;
     border-radius: 25px;    
-}
-
-#menu-mobile {
-    display: none;
-}
-
-
-@media(max-width: 800px){
-
-    .nav-banner img {
-        display: none;
-    }
-
-    .banner2 img {
-        display: none;
-    }
-
-    .div-logo-footer1 {
-        margin-left: 0;
-    }
-
-    .div-logo-footer2 {
-        margin-left: 0;
-    }
-}
-
-@media(max-width: 465px){
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;      
-    }
-
-    .div-container {
-        display: none;     
-    }
-
-    #menu-mobile {
-        display: block;
-    }
 }

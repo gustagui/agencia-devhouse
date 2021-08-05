@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/global.css" rel="stylesheet">
+    <link href="/css/contato.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title> Contato </title>
+</head>
+<body>
+    <%- include('components/header') %> 
+    
+    <main>
+        <section>
+            <h1> Contato </h1>
+            <small> Questions or concerns? Just fill out the form below and our support team will<br> get back to you within 24 hours </small>
+        </section>
+        <form action="/receber-contato" method="POST">     
+                <div class="fullname">
+                    <input class="input-padrao" type="text" name="name" placeholder="First Name">
+                    <input class="input-padrao" type="text" name="lastname"  placeholder="Last Name">
+                </div>     
+                <input class="input-padrao" id="input-phone" type="Tel" name="telefone"  placeholder="Phone Number">
+                <select class="id-select" name="Select Service">
+                    <option selected disabled > Select Service </option>
+                    <option value="Site"> Site </option>
+                    <option value="Sistem"> Sistem </option>
+                    <option value="App"> App </option>
+                    <option value="Commerce">Commerce</option>
+                </select>
+                <div>
+                    <button class="button-form" type="submit">Enviar</button>
+                    <button class="button-form" type="reset">Limpar</button>
+                </div>                
+            </section>
+        </form>
+    </main>    
+
+    <%- include('components/footer') %>
+</body>
+</html>

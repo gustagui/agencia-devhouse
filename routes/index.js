@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
-
+const depoimentos = require("../models/depoimentos");
+const produtos = require("../models/produtos");
 const routes = express.Router();
 
 
@@ -8,26 +9,34 @@ routes.get("/produtos/lista", (req, res) => {
     res.send("Página de produtos");
 });
 
-
 routes.get("/", (req, res) => {
-    res.sendFile(path.resolve("views", "home.html"));
+    res.render("home");
 });
 
 routes.get("/home", (req, res) => {
-    res.sendFile(path.resolve("views", "home.html"));
+    res.render("home");
 });
 
 routes.get("/contato", (req, res) => {
-    res.sendFile(path.resolve("views", "contato.html"));
+    res.render("contato");
 });
 
 routes.get("/blog", (req, res) => {
-    res.sendFile(path.resolve("views", "blog.html"));
+    res.render("blog");
 });
 
 routes.get("/manutencao", (req, res) => {
-    res.sendFile(path.resolve("views", "manutencao.html"));
+    res.render("manutencao");
 });
+
+routes.get("/produtos", (req, res) => {
+    res.render("produtos", { produtos, titulo: "produtos"});
+});
+
+routes.get("/depoimentos", (req, res) => {    
+    res.render("depoimentos", { depoimentos, titulo: "depoimentos" });
+});
+
 
 routes.post('/receber-contato', (req, res) => {
     console.log(req.body);
