@@ -22,9 +22,6 @@ const indexController = {
         res.render("depoimentos", { depoimentos, titulo: "depoimentos" });
     },
 
-    exibirProdutos: (req, res) => {
-        res.render("produtos", { produtos, titulo: "produtos"});
-    },
     
     receberContato: (req, res) => {
         console.log(req.body);

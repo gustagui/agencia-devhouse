@@ -18,7 +18,9 @@ routes.get("/blog", indexController.exibirBlog);
 
 routes.get("/manutencao", indexController.exibirManutencao);
 
-routes.get("/produtos", indexController.exibirProdutos);
+routes.get("/produtos", (req, res) => {
+    res.render("produtos", { produtos, titulo: "produtos"});
+});
 
 routes.get("/depoimentos", indexController.exibirDepoimentos);
 
