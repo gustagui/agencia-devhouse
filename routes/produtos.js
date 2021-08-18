@@ -1,8 +1,12 @@
 const express = require('express');
-const produtoController = require('../controller.listarProdutos');
+const produtoController = require('../controllers/produtos');
 const routes = express.Router();
+const { uuid } = require('uuidv4');
 
-routes.get('/produtos/lista', produtoController.listarProdutos);
+
+routes.get("/admin/cadastro-produto", produtoController.cadastrarProduto);
+routes.get("/admin/produtos", produtoController.listarProdutosAdmin);
+routes.post("/salvar-produto", produtoController.salvarProduto);
 
 routes.get('/produtos/:id', (req, res) =>{
     if(typeof Number(req.params.id) != "number") {

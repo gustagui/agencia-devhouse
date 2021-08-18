@@ -19,9 +19,9 @@ const indexController = {
     },
 
     exibirDepoimentos: (req, res) => {    
-        res.render("depoimentos", { depoimentos, titulo: "depoimentos" });
+        res.render("depoimentos", {
+             depoimentos, titulo: "depoimentos" });
     },
-
     
     receberContato: (req, res) => {
         console.log(req.body);

@@ -4,10 +4,9 @@ const produtos = require("../models/produtos");
 const routes = express.Router();
 
 const indexController = require('../controllers/indexController');
-const produtoController = require("../controllers/produtosController");
 
 
-routes.get('/produtos/lista', produtoController.listarProdutos);
+
 
 routes.get("/", indexController.exibirHome);
 routes.get("/home", indexController.exibirHome);
@@ -17,10 +16,6 @@ routes.get("/contato", indexController.exibirContato);
 routes.get("/blog", indexController.exibirBlog);
 
 routes.get("/manutencao", indexController.exibirManutencao);
-
-routes.get("/produtos", (req, res) => {
-    res.render("produtos", { produtos, titulo: "produtos"});
-});
 
 routes.get("/depoimentos", indexController.exibirDepoimentos);
 
