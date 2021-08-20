@@ -1,6 +1,9 @@
 const produtoModel = require("../models/produtos");
-const produtoController = { listarProdutosAdmin: (req, res) => {
-    res.render("admin/produtos");
+const produtoController = { 
+  listarProdutosAdmin: (req, res) => {
+    res.render("admin/produtos", {
+      produtos: produtoModel.listaDeProdutos,
+    });
   },
   cadastrarProduto: (req, res) => {
     res.render("admin/cadastroProduto");
@@ -12,8 +15,17 @@ const produtoController = { listarProdutosAdmin: (req, res) => {
 
     console.log(produtoModel.listaDeProdutos);
 
-    res.send("Cadastro concluido");
+    res.redirect("/admin/produtos");
   },
+  deletarProduto: ( (req, res) => {
+    const { id } = req.params;
+    const resultado = produtoModel.excluirProduto(id);
+    if (!resultado) {
+      res.send('Deu ruim')
+    }
+
+    res.redirect('/admin/produtos');
+  })
 };
 
 module.exports = produtoController;

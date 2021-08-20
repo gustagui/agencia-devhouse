@@ -1,0 +1,39 @@
+section.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: 1px solid black;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+main div {
+    text-align: right;
+    margin-right: 10%;
+}
+
+main div button {
+    width: 220px;
+    height: 50px;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+}
