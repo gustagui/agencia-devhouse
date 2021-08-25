@@ -26,7 +26,6 @@ const produtoModel = {
     return this.listaDeProdutos.push(novoProduto);
   },
   excluirProduto: function (id) {
-    console.log(id);
     const novaListaDeProdutos = this.listaDeProdutos.filter(
       (produto) => produto.id !== id
     );

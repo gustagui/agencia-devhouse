@@ -9,12 +9,9 @@ const produtoController = {
     res.render("admin/cadastroProduto");
   },
   salvarProduto: (req, res) => {
-    console.log(req.body);
+    console.log(req.file);
     const { nome, descricao, imagem } = req.body;
-    produtoModel.cadastrarProduto(nome, descricao, imagem);
-
-    console.log(produtoModel.listaDeProdutos);
-
+    produtoModel.cadastrarProduto(nome, descricao, req.file.filename);
     res.redirect("/admin/produtos");
   },
   deletarProduto: ( (req, res) => {

@@ -37,3 +37,7 @@ main div button {
     border-radius: 20px;
     border: none;
 }
+
+#upload-image {
+    width: 300px;
+}

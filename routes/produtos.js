@@ -1,20 +1,14 @@
 const express = require('express');
 const produtoController = require('../controllers/produtos');
+const verificaAdmin = require('../middlewares/admin');
+const upload = require('../middlewares/uploads');
 const routes = express.Router();
-const { generateid } = require('uuidv4');
 
-routes.get("/admin/cadastro-produto", produtoController.cadastrarProduto);
+
+routes.get("/admin/cadastro-produto", verificaAdmin, produtoController.cadastrarProduto);
 routes.get("/admin/produtos", produtoController.listarProdutosAdmin);
-routes.post("/salvar-produto", produtoController.salvarProduto);
+routes.post("/salvar-produto", upload.single('imagem'), produtoController.salvarProduto);
 routes.delete("/deletar-produto/:id", produtoController.deletarProduto);
 
-
-routes.get('/produtos/:id', (req, res) =>{
-    if(typeof Number(req.params.id) != "number") {
-        return res.send('Deve digitar um numero');
-    }
-
-    res.send('Pagina de produtos');
-});
 
 module.exports = routes;

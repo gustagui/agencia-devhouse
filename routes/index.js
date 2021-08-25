@@ -7,7 +7,6 @@ const indexController = require('../controllers/indexController');
 
 
 
-
 routes.get("/", indexController.exibirHome);
 routes.get("/home", indexController.exibirHome);
 
