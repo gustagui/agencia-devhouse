@@ -4,6 +4,7 @@ const methodOverride = require('method-override');
 
 const rotas = require("./routes");
 const rotasProdutos = require('./routes/produtos');
+const rotasDeUsuarios = require('./routes/usuariosRotas')
 
 const app = express();
 
@@ -20,5 +21,6 @@ app.use(express.static("public"));
 
 app.use(rotas);
 app.use(rotasProdutos);
+app.use(rotasDeUsuarios);
 
 app.listen(3000);
